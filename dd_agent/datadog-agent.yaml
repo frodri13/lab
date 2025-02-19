@@ -14,3 +14,9 @@ spec:
     logCollection:
       enabled: true
       containerCollectAll: true
+
+    apm:
+      enabled: true
+      hostPortConfig:
+        enabled: true
+        hostPort: 8126 # default

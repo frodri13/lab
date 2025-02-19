@@ -1,0 +1,361 @@
+2025-02-17 12:53:18 UTC | CORE | INFO | (pkg/util/log/log.go:840 in func1) | Starting to load the configuration
+2025-02-17 12:53:18 UTC | CORE | INFO | (pkg/util/log/log.go:840 in func1) | Loading proxy settings
+2025-02-17 12:53:18 UTC | CORE | INFO | (pkg/util/log/log.go:840 in func1) | Starting to resolve secrets
+2025-02-17 12:53:18 UTC | CORE | WARN | (pkg/util/log/log.go:885 in func1) | Agent configuration relax permissions constraint on the secret backend cmd, Group can read and exec
+2025-02-17 12:53:18 UTC | CORE | INFO | (pkg/util/log/log.go:840 in func1) | Finished resolving secrets
+2025-02-17 12:53:18 UTC | CORE | INFO | (pkg/util/log/log.go:845 in func1) | Agent did not find PodResources socket at unix:///var/lib/kubelet/pod-resources/kubelet.sock
+2025-02-17 12:53:18 UTC | CORE | INFO | (pkg/util/log/log.go:845 in func1) | 3 Features detected from environment: kubernetes,kube_orchestratorexplorer,docker
+2025-02-17 12:53:18 UTC | CORE | INFO | (pkg/runtime/runtime.go:28 in func1) | runtime: set GOMAXPROCS to: 2
+2025-02-17 12:53:18 UTC | CORE | INFO | (pkg/process/metadata/workloadmeta/extractor.go:84 in NewWorkloadMetaExtractor) | Instantiating a new WorkloadMetaExtractor
+2025-02-17 12:53:18 UTC | CORE | INFO | (comp/core/tagger/impl/tagger.go:124 in NewComponent) | TaggerClient is created, defaultTagger type:  *taggerimpl.localTagger
+2025-02-17 12:53:18 UTC | CORE | INFO | (pkg/util/kubernetes/kubelet/kubelet_client.go:289 in checkKubeletConnection) | Successful configuration found for Kubelet, using URL: https://192.168.5.15:10250
+2025-02-17 12:53:18 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:264 in NewDefaultForwarder) | Retry queue storage on disk is disabled
+2025-02-17 12:53:20 UTC | CORE | INFO | (pkg/util/containers/metrics/provider/registry.go:102 in collectorDiscovery) | Container metrics provider discovery process finished
+2025-02-17 12:53:20 UTC | CORE | INFO | (pkg/api/security/security.go:194 in getClusterAgentAuthToken) | Using configured cluster_agent.auth_token
+2025-02-17 12:53:20 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:264 in NewDefaultForwarder) | Retry queue storage on disk is disabled
+2025-02-17 12:53:20 UTC | CORE | INFO | (pkg/aggregator/demultiplexer.go:232 in getDogStatsDWorkerAndPipelineCount) | Dogstatsd workers and pipelines count:  2  workers,  1  pipelines
+2025-02-17 12:53:20 UTC | CORE | INFO | (pkg/aggregator/demultiplexer.go:150 in GetDogStatsDWorkerAndPipelineCount) | Dogstatsd configured to run with 2 workers and 1 pipelines
+2025-02-17 12:53:20 UTC | CORE | INFO | (pkg/aggregator/time_sampler.go:54 in NewTimeSampler) | Creating TimeSampler #0
+2025-02-17 12:53:20 UTC | CORE | INFO | (pkg/config/setup/config.go:2052 in LoadCustom) | Starting to load the configuration
+2025-02-17 12:53:20 UTC | CORE | INFO | (pkg/api/security/security.go:142 in fetchAuthToken) | [/omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/api/util/util.go:108] Creating a new authentication token
+2025-02-17 12:53:20 UTC | CORE | INFO | (pkg/api/security/security.go:241 in saveAuthToken) | Saving a new authentication token in /etc/datadog-agent/auth/token
+2025-02-17 12:53:20 UTC | CORE | INFO | (pkg/api/security/security.go:256 in saveAuthToken) | Wrote auth token in /etc/datadog-agent/auth/token
+2025-02-17 12:53:20 UTC | CORE | INFO | (pkg/api/security/security.go:155 in fetchAuthToken) | Saved a new authentication token to /etc/datadog-agent/auth/token
+2025-02-17 12:53:20 UTC | CORE | WARN | (pkg/api/security/cert/cert_getter.go:34 in GetCertFilepath) | IPC cert/key created or retrieved next to auth_token_file_path location: /etc/datadog-agent/auth/ipc_cert.pem
+2025-02-17 12:53:20 UTC | CORE | INFO | (pkg/api/security/cert/cert_getter.go:59 in fetchAgentIPCCert) | [/omnibus/src/datadog-agent/src/github.com/DataDog/datadog-agent/pkg/api/util/util.go:112] Creating a new IPC certificate
+2025-02-17 12:53:20 UTC | CORE | INFO | (pkg/api/security/cert/cert_getter.go:107 in saveIPCCertKey) | Saving a new IPC certificate/key pair in /etc/datadog-agent/auth/ipc_cert.pem
+2025-02-17 12:53:20 UTC | CORE | INFO | (pkg/api/security/cert/cert_getter.go:126 in saveIPCCertKey) | Wrote IPC certificate/key pair in /etc/datadog-agent/auth/ipc_cert.pem
+2025-02-17 12:53:20 UTC | CORE | INFO | (pkg/api/security/cert/cert_getter.go:73 in fetchAgentIPCCert) | Saved a new  IPC certificate/key pair to /etc/datadog-agent/auth/ipc_cert.pem
+2025-02-17 12:53:20 UTC | CORE | INFO | (comp/logs/agent/agentimpl/agent.go:176 in newLogsAgent) | logs-agent disabled
+2025-02-17 12:53:20 UTC | CORE | INFO | (comp/rdnsquerier/impl/rdnsquerier.go:83 in NewComponent) | Reverse DNS Enrichment config: (enabled=false workers=0 chan_size=0 cache.enabled=true cache.entry_ttl=0 cache.clean_interval=0 cache.persist_interval=0 cache.max_retries=-1 cache.max_size=0 rate_limiter.enabled=true rate_limiter.limit_per_sec=0 rate_limiter.limit_throttled_per_sec=0 rate_limiter.throttle_error_threshold=0 rate_limiter.recovery_intervals=0 rate_limiter.recovery_interval=0)
+2025-02-17 12:53:20 UTC | CORE | INFO | (comp/netflow/server/server.go:63 in newServer) | Reverse DNS Enrichment is disabled for NDM NetFlow
+2025-02-17 12:53:20 UTC | CORE | INFO | (pkg/collector/python/init.go:337 in resolvePythonExecPath) | Using '/opt/datadog-agent/embedded' as Python home
+2025-02-17 12:53:20 UTC | CORE | INFO | (pkg/collector/python/init.go:403 in Initialize) | Initializing rtloader with Python 3 /opt/datadog-agent/embedded
+2025-02-17 12:53:21 UTC | CORE | INFO | (pkg/collector/python/datadog_agent.go:148 in LogMessage) | - | (ddyaml.py:142) | monkey patching yaml.load...
+2025-02-17 12:53:21 UTC | CORE | INFO | (pkg/collector/python/datadog_agent.go:148 in LogMessage) | - | (ddyaml.py:146) | monkey patching yaml.load_all...
+2025-02-17 12:53:21 UTC | CORE | INFO | (pkg/collector/python/datadog_agent.go:148 in LogMessage) | - | (ddyaml.py:150) | monkey patching yaml.dump_all... (affects all yaml dump operations)
+2025-02-17 12:53:21 UTC | CORE | INFO | (pkg/collector/embed_python.go:22 in InitPython) | Embedding Python 3.12.6 (main, Jan 23 2025, 09:32:07) [GCC 12.3.0]
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:264 in NewDefaultForwarder) | Retry queue storage on disk is disabled
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:264 in NewDefaultForwarder) | Retry queue storage on disk is disabled
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:264 in NewDefaultForwarder) | Retry queue storage on disk is disabled
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:264 in NewDefaultForwarder) | Retry queue storage on disk is disabled
+2025-02-17 12:53:21 UTC | CORE | INFO | (pkg/config/remote/service/util.go:110 in func1) | Missing meta bucket
+2025-02-17 12:53:21 UTC | CORE | INFO | (pkg/config/remote/service/util.go:131 in openCacheDB) | Different agent version or API Key detected
+2025-02-17 12:53:21 UTC | CORE | INFO | (pkg/config/remote/service/util.go:48 in recreate) | Clear remote configuration database
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/gui/guiimpl/gui.go:109 in newGui) | GUI server port -1 specified: not starting the GUI.
+2025-02-17 12:53:21 UTC | CORE | WARN | (pkg/config/model/viper.go:264 in checkKnownKey) | config key runtime_security_config.sbom.enabled is unknown
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/workloadmeta/impl/store.go:100 in start) | workloadmeta store initialized successfully
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/autodiscovery/listeners/types.go:84 in Register) | Service listener factory cloudfoundry_bbs does not exist.
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/autodiscovery/listeners/types.go:84 in Register) | Service listener factory kube_endpoints does not exist.
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/autodiscovery/listeners/types.go:84 in Register) | Service listener factory kube_services does not exist.
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/autodiscovery/providers/config_reader.go:172 in read) | Searching for configuration files at: /etc/datadog-agent/conf.d
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/tagger/collectors/workloadmeta_main.go:153 in stream) | workloadmeta tagger collector started
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/workloadmeta/impl/store.go:557 in startCandidates) | workloadmeta collector "crio" could not start. error: component workloadmeta-crio is disabled: Crio not detected
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/workloadmeta/impl/store.go:557 in startCandidates) | workloadmeta collector "cloudfoundry-container" could not start. error: component workloadmeta-cloudfoundry-container is disabled: Agent is not running on CloudFoundry
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/workloadmeta/impl/store.go:557 in startCandidates) | workloadmeta collector "containerd" could not start. error: component workloadmeta-containerd is disabled: Agent is not running on containerd
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/workloadmeta/impl/store.go:557 in startCandidates) | workloadmeta collector "podman" could not start. error: component workloadmeta-podman is disabled: Podman not detected
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/autodiscovery/providers/config_reader.go:248 in collectEntry) | Skipping 'auto_conf.yaml' for integration 'kubernetes_state'
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/autodiscovery/providers/config_reader.go:172 in read) | Searching for configuration files at: /opt/datadog-agent/bin/agent/dist/conf.d
+2025-02-17 12:53:21 UTC | CORE | WARN | (comp/core/autodiscovery/providers/config_reader.go:176 in read) | Skipping, open /opt/datadog-agent/bin/agent/dist/conf.d: no such file or directory
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/autodiscovery/providers/config_reader.go:172 in read) | Searching for configuration files at: 
+2025-02-17 12:53:21 UTC | CORE | WARN | (comp/core/autodiscovery/providers/config_reader.go:176 in read) | Skipping, open : no such file or directory
+2025-02-17 12:53:21 UTC | CORE | INFO | (pkg/config/autodiscovery/autodiscovery.go:115 in DiscoverComponentsFromEnv) | Adding KubeContainer provider from environment
+2025-02-17 12:53:21 UTC | CORE | INFO | (pkg/config/autodiscovery/autodiscovery.go:125 in DiscoverComponentsFromEnv) | Adding Kubelet listener from environment
+2025-02-17 12:53:21 UTC | CORE | WARN | (comp/core/autodiscovery/providers/endpointschecks.go:55 in NewEndpointsChecksConfigProvider) | Cannot get dca client: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/autodiscovery/autodiscoveryimpl/autoconfig.go:529 in initListenerCandidates) | environment listener successfully started
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/autodiscovery/autodiscoveryimpl/autoconfig.go:529 in initListenerCandidates) | static config listener successfully started
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/autodiscovery/autodiscoveryimpl/autoconfig.go:529 in initListenerCandidates) | kubelet listener successfully started
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/autodiscovery/listeners/environment.go:64 in createServices) | Listener created docker service from environment
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/autodiscovery/listeners/environment.go:64 in createServices) | Listener created kubelet service from environment
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/autodiscovery/listeners/environment.go:64 in createServices) | Listener created kube_orchestrator service from environment
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/autodiscovery/listeners/environment.go:71 in createServices) | Listener created container service from environment
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/autodiscovery/listeners/workloadmeta.go:142 in Listen) | ad-kubeletlistener initialized successfully
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:419 in Start) | Forwarder started, sending to 1 endpoint(s) with 1 worker(s) each: "https://7-62-0-app.agent.datadoghq.com" (1 api key(s))
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:419 in Start) | Forwarder started, sending to 1 endpoint(s) with 1 worker(s) each: "https://orchestrator.datadoghq.com" (1 api key(s))
+2025-02-17 12:53:21 UTC | CORE | INFO | (pkg/collector/runner/runner.go:100 in ensureMinWorkers) | Runner 1 added 4 workers (total: 4)
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:419 in Start) | Forwarder started, sending to 1 endpoint(s) with 1 worker(s) each: "https://process-events.datadoghq.com" (1 api key(s))
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:419 in Start) | Forwarder started, sending to 1 endpoint(s) with 1 worker(s) each: "https://process.datadoghq.com" (1 api key(s))
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:419 in Start) | Forwarder started, sending to 1 endpoint(s) with 1 worker(s) each: "https://process.datadoghq.com" (1 api key(s))
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/default_forwarder.go:419 in Start) | Forwarder started, sending to 1 endpoint(s) with 1 worker(s) each: "https://process.datadoghq.com" (1 api key(s))
+2025-02-17 12:53:21 UTC | CORE | INFO | (pkg/process/runner/submitter.go:182 in printStartMessage) | Starting CheckSubmitter for host=lima-rancher-desktop, endpoints=[https://process.datadoghq.com], events endpoints=[https://process-events.datadoghq.com]
+2025-02-17 12:53:21 UTC | CORE | INFO | (pkg/process/runner/runner.go:286 in Run) | Starting process-agent with enabled checks=[process_discovery rtcontainer container]
+2025-02-17 12:53:21 UTC | CORE | INFO | (pkg/process/runner/runner.go:243 in logCheckDuration) | Finished process_discovery check #1 in 4.89ms
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/workloadmeta/impl/store.go:554 in startCandidates) | workloadmeta collector "docker" started successfully
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/workloadmeta/impl/store.go:557 in startCandidates) | workloadmeta collector "cloudfoundry-vm" could not start. error: component workloadmeta-cloudfoundry-vm is disabled: Agent is not running on CloudFoundry
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/workloadmeta/impl/store.go:557 in startCandidates) | workloadmeta collector "ecs" could not start. error: component workloadmeta-ecs is disabled: Agent is not running on ECS EC2
+2025-02-17 12:53:21 UTC | CORE | ERROR | (comp/core/workloadmeta/collectors/internal/kubemetadata/kubemetadata.go:90 in Start) | Could not initialise the communication with the cluster agent: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/workloadmeta/impl/store.go:554 in startCandidates) | workloadmeta collector "kubelet" started successfully
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/workloadmeta/impl/store.go:557 in startCandidates) | workloadmeta collector "ecs_fargate" could not start. error: component workloadmeta-ecs_fargate is disabled: Agent is not running on ECS Fargate
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/workloadmeta/impl/store.go:554 in startCandidates) | workloadmeta collector "local-process-collector" started successfully
+2025-02-17 12:53:21 UTC | CORE | INFO | (comp/core/workloadmeta/impl/store.go:557 in startCandidates) | workloadmeta collector "process-collector" could not start. error: collector process-collector is not enabled
+2025-02-17 12:53:21 UTC | CORE | INFO | (pkg/api/security/security.go:194 in getClusterAgentAuthToken) | Using configured cluster_agent.auth_token
+2025-02-17 12:53:21 UTC | CORE | ERROR | (comp/core/workloadmeta/collectors/internal/kubemetadata/kubemetadata.go:90 in Start) | Could not initialise the communication with the cluster agent: temporary failure in clusterAgentClient, will retry later: "https://10.43.212.201:5005/version" is unavailable: Get "https://10.43.212.201:5005/version": dial tcp 10.43.212.201:5005: connect: connection refused
+2025-02-17 12:53:22 UTC | CORE | WARN | (comp/core/autodiscovery/providers/clusterchecks.go:198 in heartbeatSender) | Unable to send extra heartbeat to Cluster Agent, err: DCA Client not initialized by main provider yet, cannot post heartbeat, wait for init completion
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/process/checks/container.go:72 in Init) | no network ID detected: could not detect network ID
+2025-02-17 12:53:22 UTC | CORE | INFO | (comp/dogstatsd/listeners/uds_datagram.go:65 in NewUDSDatagramListener) | dogstatsd-uds: /var/run/datadog/dsd.socket successfully initialized
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/aggregator/demultiplexer.go:232 in getDogStatsDWorkerAndPipelineCount) | Dogstatsd workers and pipelines count:  2  workers,  1  pipelines
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/aggregator/demultiplexer.go:150 in GetDogStatsDWorkerAndPipelineCount) | Dogstatsd configured to run with 2 workers and 1 pipelines
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/aggregator/demultiplexer.go:232 in getDogStatsDWorkerAndPipelineCount) | Dogstatsd workers and pipelines count:  2  workers,  1  pipelines
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/aggregator/demultiplexer.go:150 in GetDogStatsDWorkerAndPipelineCount) | Dogstatsd configured to run with 2 workers and 1 pipelines
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/aggregator/demultiplexer.go:232 in getDogStatsDWorkerAndPipelineCount) | Dogstatsd workers and pipelines count:  2  workers,  1  pipelines
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/aggregator/demultiplexer.go:150 in GetDogStatsDWorkerAndPipelineCount) | Dogstatsd configured to run with 2 workers and 1 pipelines
+2025-02-17 12:53:22 UTC | CORE | INFO | (comp/languagedetection/client/clientimpl/client.go:137 in start) | Starting language detection client
+2025-02-17 12:53:22 UTC | CORE | INFO | (comp/remote-config/rcservice/rcserviceimpl/rcservice.go:115 in func1) | remote config service started
+2025-02-17 12:53:22 UTC | CORE | INFO | (comp/core/agenttelemetry/impl/agenttelemetry.go:532 in start) | Starting agent telemetry for 2 schedules and 4 profiles
+2025-02-17 12:53:22 UTC | CORE | INFO | (comp/dogstatsd/listeners/uds_datagram.go:79 in listen) | dogstatsd-uds: starting to listen on /var/run/datadog/dsd.socket
+2025-02-17 12:53:22 UTC | CORE | INFO | (comp/dogstatsd/listeners/udp.go:128 in listen) | dogstatsd-udp: starting to listen on [::]:8125
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/config/remote/client/client.go:400 in pollLoop) | retrying the first update of remote-config state (rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp [::1]:5001: connect: connection refused")
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/process/runner/runner.go:243 in logCheckDuration) | Finished container check #1 in 4.128583ms
+2025-02-17 12:53:22 UTC | CORE | INFO | (comp/api/api/apiimpl/server.go:31 in startServer) | Started HTTP server 'CMD API Server' on 127.0.0.1:5001
+2025-02-17 12:53:22 UTC | CORE | INFO | (cmd/agent/subcommands/run/command.go:512 in startAgent) | Starting Datadog Agent v7.62.0
+2025-02-17 12:53:22 UTC | CORE | INFO | (cmd/agent/subcommands/run/command.go:538 in startAgent) | Hostname is: lima-rancher-desktop
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/util/installinfo/install_info.go:94 in logVersionHistoryToFile) | Cannot read file: /opt/datadog-agent/run/version-history.json, will create a new one. open /opt/datadog-agent/run/version-history.json: no such file or directory
+2025-02-17 12:53:22 UTC | CORE | WARN | (pkg/collector/python/check_context.go:54 in initializeCheckContext) | Log receiver not provided. Logs from integrations will not be collected.
+2025-02-17 12:53:22 UTC | CORE | INFO | (comp/core/autodiscovery/autodiscoveryimpl/config_poller.go:170 in collectOnce) | file provider: collected 63 new configurations, removed 0
+2025-02-17 12:53:22 UTC | CORE | INFO | (comp/core/autodiscovery/autodiscoveryimpl/autoconfig.go:409 in LoadAndRun) | Started config provider "file"
+2025-02-17 12:53:22 UTC | CORE | ERROR | (comp/core/autodiscovery/autodiscoveryimpl/config_poller.go:215 in collect) | Unable to collect configurations from provider cluster-checks: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:22 UTC | CORE | INFO | (comp/core/autodiscovery/autodiscoveryimpl/autoconfig.go:407 in LoadAndRun) | Started config provider "cluster-checks", polled every 10s
+2025-02-17 12:53:22 UTC | CORE | ERROR | (comp/core/autodiscovery/autodiscoveryimpl/config_poller.go:215 in collect) | Unable to collect configurations from provider endpoints-checks: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:22 UTC | CORE | INFO | (comp/core/autodiscovery/autodiscoveryimpl/autoconfig.go:407 in LoadAndRun) | Started config provider "endpoints-checks", polled every 10s
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check container with an interval of 15s
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check container_image with an interval of 15s
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check container_lifecycle with an interval of 15s
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check cpu with an interval of 15s
+2025-02-17 12:53:22 UTC | CORE | INFO | (comp/core/autodiscovery/autodiscoveryimpl/autoconfig.go:409 in LoadAndRun) | Started config provider "kubernetes-container-allinone"
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check disk:67cc0574430a16ba with an interval of 15s
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check docker with an interval of 15s
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check file_handle with an interval of 15s
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check io with an interval of 15s
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check kubelet with an interval of 20s
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check load with an interval of 15s
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check memory with an interval of 15s
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check network:4b0649b7e11f0772 with an interval of 15s
+2025-02-17 12:53:22 UTC | CORE | INFO | (comp/metadata/host/hostimpl/hosttags/tags.go:165 in Get) | Unable to get host tags from source: gce - using cached host tags
+2025-02-17 12:53:22 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:76 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:22 UTC | CORE | INFO | (comp/forwarder/defaultforwarder/transaction/transaction.go:454 in internalProcess) | Successfully posted payload to "https://process.datadoghq.com/api/v1/discovery" (202 Accepted), the agent will only log transaction success every 500 transactions
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/collector/corechecks/net/ntp/ntp.go:131 in parse) | Using NTP servers: [ 0.datadog.pool.ntp.org, 1.datadog.pool.ntp.org, 2.datadog.pool.ntp.org, 3.datadog.pool.ntp.org ]
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check ntp:3c427a42a70bbf8 with an interval of 15m0s
+2025-02-17 12:53:22 UTC | CORE | ERROR | (pkg/collector/corechecks/loader.go:73 in Load) | core.loader: could not configure check orchestrator_pod: orchestrator check is configured but the cluster name is empty
+2025-02-17 12:53:22 UTC | CORE | ERROR | (pkg/collector/scheduler.go:213 in getChecks) | Unable to load a check from instance of config 'orchestrator_pod': Python Check Loader: unable to import module 'orchestrator_pod': No module named 'orchestrator_pod'; Core Check Loader: Could not configure check orchestrator_pod: orchestrator check is configured but the cluster name is empty
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check service_discovery with an interval of 1m0s
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check telemetry with an interval of 15s
+2025-02-17 12:53:22 UTC | CORE | INFO | (pkg/collector/scheduler/scheduler.go:93 in Enter) | Scheduling check uptime with an interval of 15s
+2025-02-17 12:53:23 UTC | CORE | INFO | (pkg/config/remote/client/client.go:434 in pollLoop) | retrying the first update of remote-config state (rpc error: code = Unavailable desc = connection error: desc = "transport: Error while dialing: dial tcp [::1]:5001: connect: connection refused")
+2025-02-17 12:53:23 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container | Running check...
+2025-02-17 12:53:23 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container | Done running check
+2025-02-17 12:53:23 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:kubelet | Running check...
+2025-02-17 12:53:23 UTC | CORE | INFO | (pkg/collector/corechecks/containers/kubelet/provider/summary/provider.go:113 in Provide) | Couldn't get pod data from workloadmeta store, error = "kubernetes_pod" not found 
+2025-02-17 12:53:23 UTC | CORE | INFO | (pkg/collector/corechecks/containers/kubelet/provider/summary/provider.go:113 in Provide) | Couldn't get pod data from workloadmeta store, error = "kubernetes_pod" not found 
+2025-02-17 12:53:23 UTC | CORE | INFO | (pkg/collector/corechecks/containers/kubelet/provider/summary/provider.go:113 in Provide) | Couldn't get pod data from workloadmeta store, error = "kubernetes_pod" not found 
+2025-02-17 12:53:23 UTC | CORE | INFO | (pkg/collector/corechecks/containers/kubelet/provider/summary/provider.go:113 in Provide) | Couldn't get pod data from workloadmeta store, error = "kubernetes_pod" not found 
+2025-02-17 12:53:23 UTC | CORE | INFO | (pkg/collector/corechecks/containers/kubelet/provider/summary/provider.go:113 in Provide) | Couldn't get pod data from workloadmeta store, error = "kubernetes_pod" not found 
+2025-02-17 12:53:23 UTC | CORE | INFO | (pkg/collector/corechecks/containers/kubelet/provider/summary/provider.go:113 in Provide) | Couldn't get pod data from workloadmeta store, error = "kubernetes_pod" not found 
+2025-02-17 12:53:23 UTC | CORE | INFO | (pkg/collector/corechecks/containers/kubelet/provider/summary/provider.go:113 in Provide) | Couldn't get pod data from workloadmeta store, error = "kubernetes_pod" not found 
+2025-02-17 12:53:23 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:76 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:23 UTC | CORE | INFO | (comp/metadata/host/hostimpl/hosttags/tags.go:165 in Get) | Unable to get host tags from source: gce - using cached host tags
+2025-02-17 12:53:23 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:76 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:23 UTC | CORE | INFO | (pkg/config/remote/service/service.go:613 in pollOrgStatus) | [Remote Config] Remote Configuration is disabled for this organization and agent.
+2025-02-17 12:53:23 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:kubelet | Done running check
+2025-02-17 12:53:23 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:ntp | Running check...
+2025-02-17 12:53:23 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:service_discovery | Running check...
+2025-02-17 12:53:23 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:service_discovery | Done running check
+2025-02-17 12:53:23 UTC | CORE | ERROR | (comp/core/workloadmeta/collectors/internal/kubemetadata/kubemetadata.go:90 in Start) | Could not initialise the communication with the cluster agent: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:24 UTC | CORE | INFO | (pkg/api/security/security.go:194 in getClusterAgentAuthToken) | Using configured cluster_agent.auth_token
+2025-02-17 12:53:24 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:76 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: "https://10.43.212.201:5005/version" is unavailable: Get "https://10.43.212.201:5005/version": dial tcp 10.43.212.201:5005: connect: connection refused
+2025-02-17 12:53:24 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:76 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:25 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:telemetry | Running check...
+2025-02-17 12:53:25 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:telemetry | Done running check
+2025-02-17 12:53:25 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:76 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:26 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:memory | Running check...
+2025-02-17 12:53:26 UTC | CORE | ERROR | (comp/core/workloadmeta/collectors/internal/kubemetadata/kubemetadata.go:90 in Start) | Could not initialise the communication with the cluster agent: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:26 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:memory | Done running check
+2025-02-17 12:53:26 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:76 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:26 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:76 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:27 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:io | Running check...
+2025-02-17 12:53:27 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:io | Done running check
+2025-02-17 12:53:27 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:76 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:27 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:76 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:27 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:ntp | Done running check
+2025-02-17 12:53:28 UTC | CORE | ERROR | (comp/core/workloadmeta/collectors/internal/kubemetadata/kubemetadata.go:90 in Start) | Could not initialise the communication with the cluster agent: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:28 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:docker | Running check...
+2025-02-17 12:53:28 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:docker | Done running check
+2025-02-17 12:53:28 UTC | CORE | INFO | (pkg/api/security/security.go:194 in getClusterAgentAuthToken) | Using configured cluster_agent.auth_token
+2025-02-17 12:53:28 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:76 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: "https://10.43.212.201:5005/version" is unavailable: Get "https://10.43.212.201:5005/version": dial tcp 10.43.212.201:5005: connect: connection refused
+2025-02-17 12:53:28 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:76 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:29 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:cpu | Running check...
+2025-02-17 12:53:29 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:cpu | Done running check
+2025-02-17 12:53:29 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:76 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:29 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:76 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:30 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container_image | Running check...
+2025-02-17 12:53:30 UTC | CORE | INFO | (pkg/collector/corechecks/containerimage/check.go:136 in Run) | Starting long-running check "container_image"
+2025-02-17 12:53:30 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container_image | Done running check
+2025-02-17 12:53:30 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:76 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:30 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:76 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:31 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:76 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:31 UTC | CORE | INFO | (comp/metadata/host/hostimpl/hosttags/tags.go:165 in Get) | Unable to get host tags from source: kubernetes - using cached host tags
+2025-02-17 12:53:31 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:76 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:31 UTC | CORE | INFO | (comp/metadata/host/hostimpl/utils/host.go:105 in getNetworkMeta) | could not get network metadata: could not detect network ID
+2025-02-17 12:53:32 UTC | CORE | ERROR | (comp/core/autodiscovery/autodiscoveryimpl/config_poller.go:215 in collect) | Unable to collect configurations from provider endpoints-checks: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:32 UTC | CORE | ERROR | (comp/core/autodiscovery/autodiscoveryimpl/config_poller.go:151 in poll) | Cache processing of cluster-checks configuration provider failed: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:32 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:uptime | Running check...
+2025-02-17 12:53:32 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:uptime | Done running check
+2025-02-17 12:53:32 UTC | CORE | ERROR | (pkg/util/kubernetes/hostinfo/tags.go:76 in getNodeInfoTags) | Unable to auto discover node labels: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:32 UTC | CORE | INFO | (comp/metadata/host/hostimpl/hosttags/tags.go:165 in Get) | Unable to get host tags from source: kubernetes - using cached host tags
+2025-02-17 12:53:33 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:network | Running check...
+2025-02-17 12:53:33 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:network | Done running check
+2025-02-17 12:53:34 UTC | CORE | ERROR | (comp/core/workloadmeta/collectors/internal/kubemetadata/kubemetadata.go:90 in Start) | Could not initialise the communication with the cluster agent: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:34 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:load | Running check...
+2025-02-17 12:53:34 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:load | Done running check
+2025-02-17 12:53:35 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:file_handle | Running check...
+2025-02-17 12:53:35 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:file_handle | Done running check
+2025-02-17 12:53:36 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:disk | Running check...
+2025-02-17 12:53:36 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:disk | Done running check
+2025-02-17 12:53:37 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container_lifecycle | Running check...
+2025-02-17 12:53:37 UTC | CORE | INFO | (pkg/collector/corechecks/containerlifecycle/check.go:92 in Run) | Starting long-running check "container_lifecycle"
+2025-02-17 12:53:37 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container_lifecycle | Done running check
+2025-02-17 12:53:38 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container | Running check...
+2025-02-17 12:53:38 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container | Done running check
+2025-02-17 12:53:40 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:telemetry | Running check...
+2025-02-17 12:53:40 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:telemetry | Done running check
+2025-02-17 12:53:41 UTC | CORE | INFO | (pkg/api/security/security.go:194 in getClusterAgentAuthToken) | Using configured cluster_agent.auth_token
+2025-02-17 12:53:41 UTC | CORE | ERROR | (comp/core/workloadmeta/collectors/internal/kubemetadata/kubemetadata.go:90 in Start) | Could not initialise the communication with the cluster agent: temporary failure in clusterAgentClient, will retry later: "https://10.43.212.201:5005/version" is unavailable: Get "https://10.43.212.201:5005/version": dial tcp 10.43.212.201:5005: connect: connection refused
+2025-02-17 12:53:41 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:memory | Running check...
+2025-02-17 12:53:41 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:memory | Done running check
+2025-02-17 12:53:42 UTC | CORE | ERROR | (comp/core/autodiscovery/autodiscoveryimpl/config_poller.go:215 in collect) | Unable to collect configurations from provider endpoints-checks: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:42 UTC | CORE | ERROR | (comp/core/autodiscovery/autodiscoveryimpl/config_poller.go:151 in poll) | Cache processing of cluster-checks configuration provider failed: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:42 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:io | Running check...
+2025-02-17 12:53:42 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:io | Done running check
+2025-02-17 12:53:43 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:docker | Running check...
+2025-02-17 12:53:43 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:docker | Done running check
+2025-02-17 12:53:43 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:kubelet | Running check...
+2025-02-17 12:53:43 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:kubelet | Done running check
+2025-02-17 12:53:44 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:cpu | Running check...
+2025-02-17 12:53:44 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:cpu | Done running check
+2025-02-17 12:53:45 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container_image | Running check...
+2025-02-17 12:53:45 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container_image | Done running check
+2025-02-17 12:53:47 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:uptime | Running check...
+2025-02-17 12:53:47 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:uptime | Done running check
+2025-02-17 12:53:48 UTC | CORE | WARN | (comp/core/autodiscovery/providers/clusterchecks.go:198 in heartbeatSender) | Unable to send extra heartbeat to Cluster Agent, err: DCA Client not initialized by main provider yet, cannot post heartbeat, wait for init completion
+2025-02-17 12:53:48 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:network | Running check...
+2025-02-17 12:53:48 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:network | Done running check
+2025-02-17 12:53:49 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:load | Running check...
+2025-02-17 12:53:49 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:load | Done running check
+2025-02-17 12:53:50 UTC | CORE | ERROR | (comp/core/workloadmeta/collectors/internal/kubemetadata/kubemetadata.go:90 in Start) | Could not initialise the communication with the cluster agent: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:50 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:file_handle | Running check...
+2025-02-17 12:53:50 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:file_handle | Done running check
+2025-02-17 12:53:51 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:disk | Running check...
+2025-02-17 12:53:51 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:disk | Done running check
+2025-02-17 12:53:52 UTC | CORE | INFO | (comp/core/agenttelemetry/impl/agenttelemetry.go:474 in run) | Starting agent telemetry run
+2025-02-17 12:53:52 UTC | CORE | INFO | (comp/core/agenttelemetry/impl/sender.go:371 in flushSession) | Flushing Agent Telemetery session with 4 payloads
+2025-02-17 12:53:52 UTC | CORE | ERROR | (comp/core/autodiscovery/autodiscoveryimpl/config_poller.go:215 in collect) | Unable to collect configurations from provider endpoints-checks: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:52 UTC | CORE | ERROR | (comp/core/autodiscovery/autodiscoveryimpl/config_poller.go:151 in poll) | Cache processing of cluster-checks configuration provider failed: temporary failure in clusterAgentClient, will retry later: try delay not elapsed yet
+2025-02-17 12:53:52 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container_lifecycle | Running check...
+2025-02-17 12:53:52 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container_lifecycle | Done running check
+2025-02-17 12:53:53 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container | Running check...
+2025-02-17 12:53:53 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container | Done running check
+2025-02-17 12:53:55 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:telemetry | Running check...
+2025-02-17 12:53:55 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:telemetry | Done running check
+2025-02-17 12:53:56 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:memory | Running check...
+2025-02-17 12:53:56 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:memory | Done running check
+2025-02-17 12:53:57 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:io | Running check...
+2025-02-17 12:53:57 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:io | Done running check
+2025-02-17 12:53:58 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:docker | Running check...
+2025-02-17 12:53:58 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:docker | Done running check
+2025-02-17 12:53:59 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:cpu | Running check...
+2025-02-17 12:53:59 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:cpu | Done running check
+2025-02-17 12:54:00 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container_image | Running check...
+2025-02-17 12:54:00 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container_image | Done running check
+2025-02-17 12:54:02 UTC | CORE | INFO | (pkg/api/security/security.go:194 in getClusterAgentAuthToken) | Using configured cluster_agent.auth_token
+2025-02-17 12:54:02 UTC | CORE | INFO | (pkg/api/security/security.go:194 in getClusterAgentAuthToken) | Using configured cluster_agent.auth_token
+2025-02-17 12:54:02 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:uptime | Running check...
+2025-02-17 12:54:02 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:uptime | Done running check
+2025-02-17 12:54:02 UTC | CORE | INFO | (pkg/util/clusteragent/clusteragent.go:143 in init) | Successfully connected to the Datadog Cluster Agent 7.62.0+commit.d7d41c9
+2025-02-17 12:54:02 UTC | CORE | INFO | (pkg/util/clusteragent/clusteragent.go:143 in init) | Successfully connected to the Datadog Cluster Agent 7.62.0+commit.d7d41c9
+2025-02-17 12:54:03 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:network | Running check...
+2025-02-17 12:54:03 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:network | Done running check
+2025-02-17 12:54:03 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:kubelet | Running check...
+2025-02-17 12:54:03 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:kubelet | Done running check
+2025-02-17 12:54:04 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:load | Running check...
+2025-02-17 12:54:04 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:load | Done running check
+2025-02-17 12:54:05 UTC | CORE | INFO | (comp/core/workloadmeta/impl/store.go:554 in startCandidates) | workloadmeta collector "kube_metadata" started successfully
+2025-02-17 12:54:05 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:file_handle | Running check...
+2025-02-17 12:54:05 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:file_handle | Done running check
+2025-02-17 12:54:06 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:disk | Running check...
+2025-02-17 12:54:06 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:disk | Done running check
+2025-02-17 12:54:07 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container_lifecycle | Running check...
+2025-02-17 12:54:07 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container_lifecycle | Done running check
+2025-02-17 12:54:08 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container | Running check...
+2025-02-17 12:54:08 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container | Done running check
+2025-02-17 12:54:10 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:telemetry | Running check...
+2025-02-17 12:54:10 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:telemetry | Done running check
+2025-02-17 12:54:11 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:memory | Running check...
+2025-02-17 12:54:11 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:memory | Done running check
+2025-02-17 12:54:12 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:io | Running check...
+2025-02-17 12:54:12 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:io | Done running check
+2025-02-17 12:54:13 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:docker | Running check...
+2025-02-17 12:54:13 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:docker | Done running check
+2025-02-17 12:54:14 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:cpu | Running check...
+2025-02-17 12:54:14 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:cpu | Done running check
+2025-02-17 12:54:15 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container_image | Running check...
+2025-02-17 12:54:15 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container_image | Done running check
+2025-02-17 12:54:17 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:uptime | Running check...
+2025-02-17 12:54:17 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:uptime | Done running check
+2025-02-17 12:54:18 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:network | Running check...
+2025-02-17 12:54:18 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:network | Done running check
+2025-02-17 12:54:19 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:load | Running check...
+2025-02-17 12:54:19 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:load | Done running check
+2025-02-17 12:54:20 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:file_handle | Running check...
+2025-02-17 12:54:20 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:file_handle | Done running check
+2025-02-17 12:54:21 UTC | CORE | INFO | (comp/metadata/inventoryotel/inventoryotelimpl/inventoryotel.go:214 in fetchOtelAgentMetadata) | OTel Metadata unavailable as OTel collector is disabled
+2025-02-17 12:54:21 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:disk | Running check...
+2025-02-17 12:54:21 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:disk | Done running check
+2025-02-17 12:54:21 UTC | CORE | INFO | (pkg/util/cloudproviders/cloudproviders.go:67 in DetectCloudProvider) | No cloud provider detected
+2025-02-17 12:54:22 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container_lifecycle | Running check...
+2025-02-17 12:54:22 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container_lifecycle | Done running check
+2025-02-17 12:54:23 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container | Running check...
+2025-02-17 12:54:23 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container | Done running check, next runs will be logged every 500 runs
+2025-02-17 12:54:23 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:kubelet | Running check...
+2025-02-17 12:54:23 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:service_discovery | Running check...
+2025-02-17 12:54:23 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:service_discovery | Done running check
+2025-02-17 12:54:23 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:kubelet | Done running check
+2025-02-17 12:54:25 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:telemetry | Running check...
+2025-02-17 12:54:25 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:telemetry | Done running check, next runs will be logged every 500 runs
+2025-02-17 12:54:26 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:memory | Running check...
+2025-02-17 12:54:26 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:memory | Done running check, next runs will be logged every 500 runs
+2025-02-17 12:54:27 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:io | Running check...
+2025-02-17 12:54:27 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:io | Done running check, next runs will be logged every 500 runs
+2025-02-17 12:54:28 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:docker | Running check...
+2025-02-17 12:54:28 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:docker | Done running check, next runs will be logged every 500 runs
+2025-02-17 12:54:29 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:cpu | Running check...
+2025-02-17 12:54:29 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:cpu | Done running check, next runs will be logged every 500 runs
+2025-02-17 12:54:30 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container_image | Running check...
+2025-02-17 12:54:30 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container_image | Done running check, next runs will be logged every 500 runs
+2025-02-17 12:54:32 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:uptime | Running check...
+2025-02-17 12:54:32 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:uptime | Done running check, next runs will be logged every 500 runs
+2025-02-17 12:54:33 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:network | Running check...
+2025-02-17 12:54:33 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:network | Done running check, next runs will be logged every 500 runs
+2025-02-17 12:54:34 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:load | Running check...
+2025-02-17 12:54:34 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:load | Done running check, next runs will be logged every 500 runs
+2025-02-17 12:54:35 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:file_handle | Running check...
+2025-02-17 12:54:35 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:file_handle | Done running check, next runs will be logged every 500 runs
+2025-02-17 12:54:36 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:disk | Running check...
+2025-02-17 12:54:36 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:disk | Done running check, next runs will be logged every 500 runs
+2025-02-17 12:54:37 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:container_lifecycle | Running check...
+2025-02-17 12:54:37 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:container_lifecycle | Done running check, next runs will be logged every 500 runs
+2025-02-17 12:54:43 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:kubelet | Running check...
+2025-02-17 12:54:43 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:kubelet | Done running check, next runs will be logged every 500 runs
+2025-02-17 12:55:23 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:service_discovery | Running check...
+2025-02-17 12:55:23 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:service_discovery | Done running check
+2025-02-17 12:55:35 UTC | CORE | ERROR | (comp/forwarder/defaultforwarder/worker.go:224 in process) | Error while processing transaction: error while sending transaction, rescheduling it: Post "https://7-62-0-app.agent.datadoghq.com/api/v1/check_run": read tcp 10.42.0.85:38050->3.233.149.20:443: read: connection reset by peer
+2025-02-17 13:07:43 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:service_discovery | Running check...
+2025-02-17 13:07:43 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:service_discovery | Done running check
+2025-02-17 13:07:52 UTC | CORE | INFO | (pkg/process/runner/runner.go:247 in logCheckDuration) | Finish container check #20 in 1.18425ms
+2025-02-17 13:08:43 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:40 in CheckStarted) | check:service_discovery | Running check...
+2025-02-17 13:08:43 UTC | CORE | INFO | (pkg/collector/worker/check_logger.go:59 in CheckFinished) | check:service_discovery | Done running check, next runs will be logged every 500 runs
+2025-02-17 13:11:12 UTC | CORE | INFO | (pkg/process/runner/runner.go:247 in logCheckDuration) | Finish container check #40 in 762.625µs
+2025-02-17 13:14:32 UTC | CORE | INFO | (pkg/process/runner/runner.go:247 in logCheckDuration) | Finish container check #60 in 786.084µs
+2025-02-17 13:14:42 UTC | CORE | INFO | (comp/core/agenttelemetry/impl/agenttelemetry.go:474 in run) | Starting agent telemetry run
+2025-02-17 13:14:42 UTC | CORE | INFO | (comp/core/agenttelemetry/impl/agenttelemetry.go:474 in run) | Starting agent telemetry run
+2025-02-17 13:14:42 UTC | CORE | INFO | (comp/core/agenttelemetry/impl/sender.go:371 in flushSession) | Flushing Agent Telemetery session with 4 payloads
+2025-02-17 13:15:41 UTC | CORE | INFO | (comp/metadata/inventoryotel/inventoryotelimpl/inventoryotel.go:214 in fetchOtelAgentMetadata) | OTel Metadata unavailable as OTel collector is disabled
+2025-02-17 13:15:48 UTC | CORE | INFO | (pkg/util/cloudproviders/cloudproviders.go:67 in DetectCloudProvider) | No cloud provider detected
