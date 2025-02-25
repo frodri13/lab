@@ -4,19 +4,16 @@ metadata:
   name: datadog
 spec:
   global:
-    clusterName: rancher-desktop 
+    clusterName: fabio_lab
     site: datadoghq.com
     credentials:
       apiSecret:
         secretName: datadog-secret
         keyName: api-key
+
   features:
     logCollection:
       enabled: true
       containerCollectAll: true
-
     apm:
       enabled: true
-      hostPortConfig:
-        enabled: true
-        hostPort: 8126 # default

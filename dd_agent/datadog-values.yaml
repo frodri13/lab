@@ -1,16 +1,8 @@
 datadog:
-  apiKeyExistingSecret: datadog-secret
-  site: datadoghq.com
-
-  logs:
-    enabled: true
-    containerCollectAll: true
-
-  apm:
-    portEnabled: true
-    socketEnabled: false
-    port: 8126 # default
-    instrumentation:
-      enabled: true
-      libVersions:
-         python: "2"
+ apiKeyExistingSecret: datadog-secret
+ site: datadoghq.com
+ logs:
+   enabled: true
+   containerCollectAll: true
+ apm:
+   socketEnabled: true    
