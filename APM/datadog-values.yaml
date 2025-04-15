@@ -1,0 +1,15 @@
+datadog:
+ apiKeyExistingSecret: datadog-secret
+ site: datadoghq.com
+
+ logs:
+   enabled: true
+   containerCollectAll: true
+
+ apm:
+   instrumentation:
+      enabled: true
+      targets:
+        - name: "default-target"
+          ddTraceVersions:
+            python: "v2"
